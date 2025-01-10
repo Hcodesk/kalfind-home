@@ -11,21 +11,22 @@ interface Services {
 
 export default function ServicesSection() {
   const services : Services[] = [
-    { id: 1, title: "web design", ville: "Dakar", image: "" },
-    { id: 2, title: "web design", ville: "Dakar", image: "" },
-    { id: 2, title: "web design", ville: "Dakar", image: "" },
-    { id: 2, title: "web design", ville: "Dakar", image: "" },
-    { id: 2, title: "web design", ville: "Dakar", image: "" },
+    { id: 1, title: "web design", ville: "Dakar", image: "/carreleur.png" },
+    { id: 2, title: "web design", ville: "Dakar", image: "/electricien.png" },
+    { id: 3, title: "web design", ville: "Dakar", image: "/plombier.png" },
+    { id: 4, title: "web design", ville: "Dakar", image: "/menuisier.png" },
+    { id: 5, title: "web design", ville: "Dakar", image: "/peintre.png" },
+    { id: 5, title: "web design", ville: "Dakar", image: "/decorateur.png" },
   ];
 
   return (
-    <section>
+    <section className="flex gap-4">
       {services.map((service, index) => (
-        <div className={`flex flex-col gap-[16px]`}>
+        <div key={index} className='flex flex-col gap-[16px] border '>
           <div className={`relative w-full rounded-[30px]  overflow-hidden`}>
             <span>
               <Image
-                src={service.image || "/hero.svg"}
+                src={service.image || "/plombier.png"}
                 fill={true}
                 objectFit="cover"
                 alt=""
