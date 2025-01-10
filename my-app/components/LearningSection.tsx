@@ -18,11 +18,11 @@ interface Learning {
 
 export default function LearningSection() {
   const learnings: Learning[] = [
-    { id: 1, title: "Comment devenir électricien ?", duration: "1 Heure", description: "Découvrez les étapes pour devenir un électricien qualifié", image: "/electrician.jpg" },
-    { id: 2, title: "Les bases de la plomberie", duration: "45 Minutes", description: "Apprenez les fondamentaux de la plomberie résidentielle", image: "/plumber.jpg" },
-    { id: 3, title: "Menuiserie pour débutants", duration: "1 Heure 30", description: "Initiez-vous aux techniques de base de la menuiserie", image: "/carpenter.jpg" },
-    { id: 4, title: "Techniques de peinture avancées", duration: "1 Heure", description: "Maîtrisez les techniques de peinture professionnelles", image: "/painter.jpg" },
-    { id: 5, title: "Introduction à la décoration d'intérieur", duration: "2 Heures", description: "Découvrez les principes de base de la décoration d'intérieur", image: "/interior-designer.jpg" },
+    { id: 1, title: "Comment devenir électricien ?", duration: "1 Heure", description: "Découvrez les étapes pour devenir un électricien qualifié", image: "/electricienne.png" },
+    { id: 2, title: "Les bases de la plomberie", duration: "45 Minutes", description: "Apprenez les fondamentaux de la plomberie résidentielle", image: "/plombier.png" },
+    { id: 3, title: "Menuiserie pour débutants", duration: "1 Heure 30", description: "Initiez-vous aux techniques de base de la menuiserie", image: "/menuisierF.png" },
+    { id: 4, title: "Techniques de peinture d'interieur", duration: "1 Heure", description: "Maîtrisez les techniques de peinture professionnelles", image: "/plombier2.png" },
+    { id: 5, title: "Introduction à la décoration", duration: "2 Heures", description: "Découvrez les principes de base de la décoration d'intérieur", image: "/decorateur interieur.png" },
   ];
 
   // Limiter à 4 cartes pour l'affichage 2xl
@@ -59,7 +59,7 @@ export default function LearningSection() {
           <h2 className="text-xl font-semibold">
             Apprenez de nouvelles compétences
           </h2>
-          <button className="text-primary text-sm border px-3 py-1 rounded">Voir plus</button>
+          <button className="hidden text-primary text-sm border px-3 py-1 rounded">Voir plus</button>
         </div>
         <div className="-mr-4">
           <Carousel className="w-full">
@@ -74,6 +74,9 @@ export default function LearningSection() {
                   />
                 </CarouselItem>
               ))}
+              <CarouselItem className="pl-2 basis-[20%] flex items-center justify-center">
+                  <button className="flex-1 text-black">Voir plus</button>
+              </CarouselItem>
             </CarouselContent>
           </Carousel>
         </div>

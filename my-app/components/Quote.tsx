@@ -44,7 +44,7 @@ export default function Quote() {
           </span>
         </div>
 
-        <button className="px-[33.6px] py-[14.93px] rounded-[6px] text-[14.93px] bg-white font-semibold max-w-[157.2px] ">
+        <button className="px-[33.6px] py-[14.93px] transition-colors transition duration-300 ease-in-out rounded-[6px] text-[14.93px] hover:bg-black hover:text-white bg-white font-semibold max-w-[157.2px] ">
           Commencer
         </button>
       </div>

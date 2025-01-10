@@ -20,6 +20,7 @@ export default {
   		},
 		backgroundImage: {
 			quoteBg: "url('/quoteBg.svg')",
+			footerBg: "url('/footerS.svg')",
   	}}
   },
   plugins: [require("tailwindcss-animate")],

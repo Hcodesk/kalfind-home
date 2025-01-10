@@ -5,15 +5,6 @@ import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu"
 import { Button } from "@/components/ui/button"
 import { ShineButton } from './ui/ShineButton copy';
 import Link from "next/link"
-import {
-  DropdownMenu,
-  DropdownMenuGroup,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
 
 type Checked = DropdownMenuCheckboxItemProps["checked"]
 
@@ -43,27 +34,7 @@ export default function Navbar() {
 
 
      <div className="md:hidden">
-     <DropdownMenu >
-        <DropdownMenuTrigger className='w-10 h-10 px-0' asChild>
-          <Button variant="outline">
-            <Image src="/menusvg.svg" alt="Menu button" width={24} height={24} />
-          </Button>
-        </DropdownMenuTrigger>
-
-        <DropdownMenuContent sideOffset={10} className=" flex justify-center ">
-        <DropdownMenuGroup>
-          <DropdownMenuItem>
-            S'inscrire
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            Se connecter
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-              <ShineButton className='w-full' >Devenir prestataire</ShineButton>
-          </DropdownMenuItem>
-        </DropdownMenuGroup>
-      </DropdownMenuContent>
-      </DropdownMenu>
+     
      </div>
 
      
