@@ -18,7 +18,7 @@ export default function CardsSection() {
           <Carousel className="w-full">
             <CarouselContent className="">
               {tab.map((item, index) => (
-                <CarouselItem key={index} className="pl-2 basis-full sm:basis-1/2 lg:basis-1/3 flex items-center justify-center">
+                <CarouselItem key={index} className="px-auto basis-full sm:basis-1/2 lg:basis-1/3 flex items-center justify-center">
                         <Card key={index} work={item.work} location={item.location} img={item.img} textSize={item.textSize} titleSize={item.titleSize} height={item.height} gap={item.gap} />
                 </CarouselItem>
               ))}
