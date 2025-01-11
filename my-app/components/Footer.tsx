@@ -6,7 +6,7 @@ export default function Footer() {
   return (
    <footer className='mt-20 grid border pt-10 px-4 rounded-md grid-cols-1 justify-center lg:grid-cols-2 bg-footerBg lg:h-[592px] w-full bg-no-repeat bg-cover'>
         <div className="flex justify-center">
-            <Image src="/footerImg.svg" alt="footer img" width={535} height={443} />
+            <Image src="/footerImg1.webp" alt="footer img" width={535} height={443} />
         </div>
 
         <div className='flex flex-col p-4 gap-6 justify-center text-white'>

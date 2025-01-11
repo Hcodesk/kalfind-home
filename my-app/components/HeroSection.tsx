@@ -52,7 +52,7 @@ export default function HeroSection() {
       </div>
 
       <div className="hidden lg:block">
-          <Image src="/heroImage.svg" width={560} height={588} alt="" />
+          <Image src="/heroImage1.webp" width={560} height={588} alt="" />
       </div>
     </section>
   );
