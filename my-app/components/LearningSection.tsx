@@ -1,85 +1,48 @@
-"use client";
-
-import React from "react";
+import React from 'react';
+import LearningCard from './LearningCard';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import LearningCard from "./LearningCard";
-
-interface Learning {
-  id: number;
-  title: string;
-  duration: string;
-  description: string;
-  image: string;
-}
 
 export default function LearningSection() {
-  const learnings: Learning[] = [
-    { id: 1, title: "Comment devenir électricien ?", duration: "1 Heure", description: "Découvrez les étapes pour devenir un électricien qualifié", image: "/electricienne.png" },
-    { id: 2, title: "Les bases de la plomberie", duration: "45 Minutes", description: "Apprenez les fondamentaux de la plomberie résidentielle", image: "/plombier.png" },
-    { id: 3, title: "Menuiserie pour débutants", duration: "1 Heure 30", description: "Initiez-vous aux techniques de base de la menuiserie", image: "/menuisierF.png" },
-    { id: 4, title: "Techniques de peinture d'interieur", duration: "1 Heure", description: "Maîtrisez les techniques de peinture professionnelles", image: "/plombier2.png" },
-    { id: 5, title: "Introduction à la décoration", duration: "2 Heures", description: "Découvrez les principes de base de la décoration d'intérieur", image: "/decorateur interieur.png" },
-  ];
-
-  // Limiter à 4 cartes pour l'affichage 2xl
-  const displayedLearnings = learnings.slice(0, 4);
+  const tab = [
+    {title : "Formation Électricien", img : "/electricien2.png"},
+    {title : "Formation en Menuisierie", img : "/menuisier2.png"},
+    {title : "Formation en Plomberie", img : "/plombier3.png"},
+  ]
 
   return (
-    <section className="w-full justify-center px-4 md:px-6">
-      {/* Header Section */}
-      <div className="hidden md:block">
-        <div className="flex w-full justify-between items-center mb-6">
-          <h2 className="text-xl lg:text-3xl font-semibold">
-            Apprenez de nouvelles compétences
-          </h2>
-          <button className="text-primary border text-[8px] md:text-sm whitespace-nowrap px-3 py-1 rounded">Voir plus</button>
-        </div>
-
-        {/* Desktop view - regular grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-items-center">
-          {(typeof window !== 'undefined' && window.innerWidth >= 720 ? displayedLearnings : learnings).map((learning) => (
-            <LearningCard 
-              key={learning.id}
-              img={learning.image}
-              duration={learning.duration}
-              description={learning.description}
-              title={learning.title}
-            />
-          ))}
-        </div>
+    <section className='container mt-6 mx-auto md:px-10 2xl:px-[370px] px-4 '>
+      <div className='flex flex-col max-w-[433px] mb-12'>
+        <h1 className="font-semibold text-xl lg:text-[44px] leading-tight mb-4">
+          Kalfind Academy
+        </h1>
+        <p className="text-base lg:text-lg text-[#666666]">
+          Votre espace de formation e-learning pour acquérir des
+          compétences et devenir un professionnel de qualité
+        </p>
       </div>
 
-      {/* Mobile view - swipeable carousel with partial next slide visible */}
-      <div className="md:hidden">
-        <div className="flex w-full justify-between items-center mb-6">
-          <h2 className="text-xl font-semibold">
-            Apprenez de nouvelles compétences
-          </h2>
-          <button className="hidden text-primary text-sm border px-3 py-1 rounded">Voir plus</button>
-        </div>
-        <div className="-mr-4">
-          <Carousel className="w-full">
-            <CarouselContent className="-ml-2">
-              {learnings.map((learning, index) => (
-                <CarouselItem key={learning.id} className="pl-2 basis-[85%]">
-                  <LearningCard 
-                    img={learning.image}
-                    duration={learning.duration}
-                    description={learning.description}
-                    title={learning.title}
-                  />
-                </CarouselItem>
-              ))}
-              <CarouselItem className="pl-2 basis-[20%] flex items-center justify-center">
-                  <button className="flex-1 text-black">Voir plus</button>
+      <div className="w-full hidden lg:block h-px bg-[#FFC2C4] mb-12"></div>
+
+      <div className='hidden lg:grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto'>
+        {tab.map((item, index) => (
+          <LearningCard key={index} title={item.title} img={item.img}/>
+        ))}
+      </div>
+
+      <div className="lg:hidden">
+        <Carousel className="w-full">
+          <CarouselContent className="-ml-4">
+            {tab.map((item, index) => (
+              <CarouselItem key={index} className="pl-4 basis-full sm:basis-1/2">
+                <LearningCard title={item.title} img={item.img} />
               </CarouselItem>
-            </CarouselContent>
-          </Carousel>
-        </div>
+            ))}
+          </CarouselContent>
+        </Carousel>
       </div>
     </section>
   );

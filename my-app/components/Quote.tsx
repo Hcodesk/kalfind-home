@@ -26,11 +26,10 @@ export default function Quote() {
       onMouseEnter={() => setIsHovering(true)}
       onMouseMove={handleMouseMove}
       onMouseLeave={() => setIsHovering(false)}
-     className="flex relative overflow-hidden py-[64px] mx-auto border bg-center rounded-xl bg-quoteBg h-[400px] lg:h-[506px] px-2 lg:px-[126px] bg-no-repeat bg-cover md:w-full ">
+     className="flex relative overflow-hidden py-[64px] mt-14 mb-6 mx-auto border bg-center rounded-xl bg-quoteBg h-[400px] lg:h-[506px] px-2 lg:px-[126px] bg-no-repeat bg-cover md:w-full ">
       <div className="flex flex-col gap-6 lg:gap-[48.53px] ">
         <div className="max-w-[646px] flex flex-col text-white gap-4 lg:gap-[29.87px] ">
           <div className="flex flex-col"> 
-            <span className='text-sm lg:text-[14.93px] '>Lorem ipsum dolor sit amet</span>
             <span className=" text-xl lg:text-[44.8px] leading-tight lg:leading-[53.76px] font-semibold ">
               {`Besoin de quelqu'un pour vos travaux d'aménagement ou d'intérieur
               ?`}

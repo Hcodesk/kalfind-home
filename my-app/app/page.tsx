@@ -1,4 +1,5 @@
 "use client"
+import CardsSection from "@/components/CardsSection";
 import HeroSection from "@/components/HeroSection";
 import LearningSection from "@/components/LearningSection";
 import Quote from "@/components/Quote";
@@ -21,12 +22,12 @@ export default function Home() {
     };
  }, [])
   return (
-    <main className="flex flex-col gap-16 ">
-        <HeroSection/>
-        <ServicesSection/>
-        <Quote/>
-        <ServicesSection/>
-        <LearningSection/>
+    <main className="flex flex-col ">
+        <section id="home"><HeroSection/></section>
+        <section id="services" className="lg:mx-auto"><ServicesSection/></section>
+        <section id="quote"><Quote/></section>
+        <section id="prestataires"><CardsSection/></section>
+        <section id="academy"><LearningSection/></section>
     </main>
   );
 }
