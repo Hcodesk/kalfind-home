@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <nav className='flex justify-between items-center mt-2 mx-4  md:gap-6' >
       <div className='mobile-logo md:hidden'>
-        <Image src="/LogoHsvg.svg" alt="logo kalfind" width={119} height={30} />
+        <Image src="/Logovertical.svg" alt="logo kalfind" width={119} height={30} />
       </div>
       <div className='desktop-logo hidden md:block'>
         <Image src="/LogoV.svg" alt="logo kalfind" width={68} height={50} />
