@@ -21,7 +21,7 @@ export default function Footer() {
              et prestataires fiables près de chez vous.
              </span>
 
-             <ShineButton className="rounded-sm text-gray-900 bg-gray-100 font-semibold w-[158px] "> Commencer</ShineButton>
+             <ShineButton className="rounded-sm text-black bg-white hover:bg-black hover:text-white   font-semibold w-[158px] "> Commencer</ShineButton>
         </div>
    </footer>
   )

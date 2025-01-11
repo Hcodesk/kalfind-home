@@ -2,11 +2,12 @@ import React from "react";
 import { Search } from "lucide-react";
 import Image from "next/image";
 
+
 export default function HeroSection() {
   return (
     <section className="flex justify-center gap-6 lg:py-8 ">
       <div className="flex flex-col gap-6 items-center p-8 lg:w-1/2">
-        <div className="flex flex-col text-center text-2xl md:text-6xl leading-none text-black  whitespace-nowrap">
+        <div className="flex  flex-col text-center text-2xl md:text-6xl leading-none text-black  whitespace-nowrap">
           <span>Tous les professionnels,</span>
           <span className="text-red-600 font-semibold ">au meilleur prix</span>
         </div>
@@ -22,7 +23,7 @@ export default function HeroSection() {
             <Search />
           </div>
 
-          <div className="absolute hidden lg:flex justify-center items-center -right-20 gap-1">
+          <div className="absolute hidden 2xl:flex justify-center items-center -right-20 gap-1">
             <Image src="/filter.svg" alt="" width={24} height={24} />
             <span className="text-sm">Filters</span>
           </div>
@@ -40,7 +41,7 @@ export default function HeroSection() {
           ].map((item, index) => (
             <span
               key={index}
-              className="flex flex-col items-center justify-center gap-2 border border-bgBlack rounded-[10px] w-28 sm:w-36 h-24"
+              className="flex flex-col items-center motion-preset-expand justify-center gap-2 border border-bgBlack rounded-[10px] w-28 sm:w-36 h-24"
             >
               <Image src={item.icon} alt="" width={24} height={24} />
               {item.label}
@@ -50,7 +51,7 @@ export default function HeroSection() {
         </div>  
       </div>
 
-      <div className="hidden lg:block ">
+      <div className="hidden lg:block">
           <Image src="/heroImage.svg" width={560} height={588} alt="" />
       </div>
     </section>

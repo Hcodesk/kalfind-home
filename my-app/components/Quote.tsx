@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
-import Image from "next/image";
-import quoteBg from "/public/quoteBG.svg"
 import { useState,useRef,useCallback } from 'react';
+import Link from "next/link"
+import { ShineButton } from './ui/ShineButton copy';
 
 export default function Quote() {
 
@@ -44,9 +44,11 @@ export default function Quote() {
           </span>
         </div>
 
-        <button className="px-[33.6px] py-[14.93px] transition-colors transition duration-300 ease-in-out rounded-[6px] text-[14.93px] hover:bg-black hover:text-white bg-white font-semibold max-w-[157.2px] ">
-          Commencer
-        </button>
+        <ShineButton className="px-[33.6px] py-[14.93px] transition-colors  duration-300 ease-in-out rounded-[6px] text-[14.93px] hover:bg-black hover:text-white bg-white font-semibold max-w-[157.2px] ">
+          <Link  href="https://docs.google.com/forms/d/e/1FAIpQLSeQOdpIbJ1G3veqxHOd2zVtbIIJ0ZE2nRa947CmLxI_acIeig/viewform">
+               Commencer 
+          </Link>
+        </ShineButton>
       </div>
 
       {isHovering && (

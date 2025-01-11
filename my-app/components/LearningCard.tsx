@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from "next/image";
 import { ShineButtonRed } from './ui/ShineButtonRed copy';
+import Link from "next/link"
 
 interface LearningCardProps {
   xStart?:number;
@@ -39,7 +40,9 @@ export default function LearningCard({ yStart,yEnd,xStart,xEnd, img, duration,de
         </span>
         
         <ShineButtonRed style={{whiteSpace:"nowrap"}} className='w-full' >
-           Commencer à apprendre
+           <Link  href="https://docs.google.com/forms/d/e/1FAIpQLSeQOdpIbJ1G3veqxHOd2zVtbIIJ0ZE2nRa947CmLxI_acIeig/viewform">
+               Commencer à apprendre
+           </Link>
         </ShineButtonRed>
 
 

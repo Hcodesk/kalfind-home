@@ -1,13 +1,15 @@
 "use client";
 
+
 import React from "react";
 import Image from "next/image";
-import { ArrowUpRight, MoveRight } from 'lucide-react';
+import { ArrowUpRight, MoveRight } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import Link from "next/link";
 
 interface Services {
   id: number;
@@ -38,15 +40,17 @@ export default function ServicesSection() {
     <section className="w-full justify-center px-4 md:px-6">
       {/* Header Section Desktop */}
       <div className="hidden md:flex flex-col gap-4 w-full items-start">
-        
         <div className="flex w-full justify-between items-center mb-6 2xl:pr-16">
           <h2 className="text-xl 2xl:text-3xl font-semibold">
             Services Populaires Près De Chez Vous
           </h2>
-          <button className="text-nowrap text-primary hover:text-white
-          transition-colors duration-300 ease-in-out hover:bg-black border text-[8px] md:text-sm  px-3 py-1 rounded">Voir plus</button>
+          <button
+            className="text-nowrap text-primary hover:text-white
+          transition-colors duration-300 ease-in-out hover:bg-black border text-[8px] md:text-sm  px-3 py-1 rounded"
+          >
+            Voir plus
+          </button>
         </div>
-
 
         {/* Desktop view - regular grid */}
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 w-full">
@@ -55,7 +59,6 @@ export default function ServicesSection() {
           ))}
         </div>
       </div>
-
 
       {/* Mobile view - swipeable carousel with partial next slide visible */}
       <div className="md:hidden">
@@ -69,14 +72,16 @@ export default function ServicesSection() {
             <CarouselContent className="">
               {services.map((service, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                   <div className="">
-                      <ServiceCard service={service} />
-                   </div>
+                  <div className="">
+                    <ServiceCard service={service} />
+                  </div>
                 </CarouselItem>
               ))}
 
               <CarouselItem className="pl-2 basis-[20%] flex items-center justify-center">
-                  <button className="flex-1 text-black transition-transform duration-300 ease-in-out">Voir plus</button>
+                <button className="flex-1 text-black transition-transform duration-300 ease-in-out">
+                  Voir plus
+                </button>
               </CarouselItem>
             </CarouselContent>
           </Carousel>
@@ -111,14 +116,16 @@ function ServiceCard({ service }: { service: Services }) {
                 className="mt-1"
               />
               <p className="flex-1">
-                Disponible à {service.ville}, ce professionnel est reconnu pour son expertise et son sérieux.
+                Disponible à {service.ville}, ce professionnel est reconnu pour
+                son expertise et son sérieux.
               </p>
             </div>
           </div>
 
-          <button className="flex group items-center  transition-all duration-300 ease-in-out lg:max-w-[214px] hover:-translate-y-1 hover:bg-black hover:text-white justify-center gap-2 w-full py-3 px-4 border border-input rounded-md text-sm font-medium hover:bg-accent hover:text-accent-foreground">
-            Sélectionner un service
-            <ArrowUpRight className="group-hover:-translate-y-1 group-hover:translate-x-1  transition-transform duration-300 ease-in-out h-4 w-4" />
+          <button className="flex group items-center  transition-all duration-300 ease-in-out lg:max-w-[214px] hover:-translate-y-1 hover:bg-black hover:text-white justify-center w-full py-3 px-4 border border-input rounded-md text-sm font-medium hover:bg-accent hover:text-accent-foreground">
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeQOdpIbJ1G3veqxHOd2zVtbIIJ0ZE2nRa947CmLxI_acIeig/viewform" className="flex gap-2 ">
+              Sélectionner un service <ArrowUpRight className="group-hover:-translate-y-1 group-hover:translate-x-1  transition-transform duration-300 ease-in-out h-4 w-4" />
+            </Link>
           </button>
         </div>
       </div>

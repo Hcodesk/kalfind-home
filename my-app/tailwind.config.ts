@@ -23,5 +23,5 @@ export default {
 			footerBg: "url('/footerS.svg')",
   	}}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-motion")],
 } satisfies Config;
