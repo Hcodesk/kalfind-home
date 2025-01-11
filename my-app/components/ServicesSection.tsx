@@ -17,13 +17,6 @@ interface Services {
   ville: string;
   image: string;
 }
-const seeMoreButtonClass = `
-  absolute right-0 top-1/2 -translate-y-1/2 
-  bg-white text-primary border border-primary 
-  px-3 py-2 rounded-l-md shadow-md
-  z-50 text-sm font-medium
-  hover:bg-primary hover:text-white transition-colors
-`;
 
 export default function ServicesSection() {
   const services: Services[] = [

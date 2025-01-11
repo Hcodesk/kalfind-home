@@ -32,8 +32,8 @@ export default function Quote() {
           <div className="flex flex-col"> 
             <span className='text-sm lg:text-[14.93px] '>Lorem ipsum dolor sit amet</span>
             <span className=" text-xl lg:text-[44.8px] leading-tight lg:leading-[53.76px] font-semibold ">
-              Besoin de quelqu'un pour vos travaux d'aménagement ou d'intérieur
-              ?
+              {`Besoin de quelqu'un pour vos travaux d'aménagement ou d'intérieur
+              ?`}
             </span>
           </div>
 

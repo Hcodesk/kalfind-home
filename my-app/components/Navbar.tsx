@@ -24,7 +24,7 @@ export default function Navbar() {
       </div>
       <div className="hidden md:flex text-md gap-6 text-black items-center ">
         <div className="mx-4 transition-all duration-300 ease-in-out hover:text-red-600 ">
-          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeQOdpIbJ1G3veqxHOd2zVtbIIJ0ZE2nRa947CmLxI_acIeig/viewform"> S'inscrire</Link>
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeQOdpIbJ1G3veqxHOd2zVtbIIJ0ZE2nRa947CmLxI_acIeig/viewform"> {`S'inscrire`} </Link>
         </div>
         <div>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeQOdpIbJ1G3veqxHOd2zVtbIIJ0ZE2nRa947CmLxI_acIeig/viewform" className="transition-all duration-300 ease-in-out hover:text-red-600 shadow-sm ">Connexion</Link>
