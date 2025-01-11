@@ -19,7 +19,7 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
 		backgroundImage: {
-			quoteBg: "url('/quoteBg.svg')",
+			quoteBg: "url('/quoteBg.webp')",
 			footerBg: "url('/footerS.svg')",
   	}}
   },
