@@ -5,17 +5,13 @@ import { ShineButtonRed } from './ui/ShineButtonRed copy';
 import Link from "next/link"
 
 interface LearningCardProps {
-  xStart?:number;
-  yStart?:number;
-  xEnd?:number;
-  yEnd?:number;
   img : string;
   duration : string;
   description : string;
   title : string
 }
 
-export default function LearningCard({ yStart,yEnd,xStart,xEnd, img, duration,description,title }: LearningCardProps ) {
+export default function LearningCard({ img, duration,description,title }: LearningCardProps ) {
   return (
     <div className="flex flex-col w-full xl:gap-[36px] items-center border rounded-[10px] pb-4 ">
       

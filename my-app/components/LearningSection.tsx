@@ -41,7 +41,7 @@ export default function LearningSection() {
 
         {/* Desktop view - regular grid */}
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-items-center">
-          {(typeof window !== 'undefined' && window.innerWidth >= 720 ? displayedLearnings : learnings).map((learning, index) => (
+          {(typeof window !== 'undefined' && window.innerWidth >= 720 ? displayedLearnings : learnings).map((learning) => (
             <LearningCard 
               key={learning.id}
               img={learning.image}

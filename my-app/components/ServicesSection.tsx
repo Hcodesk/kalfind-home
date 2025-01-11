@@ -3,7 +3,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { ArrowUpRight, MoveRight } from "lucide-react";
+import { ArrowUpRight} from "lucide-react";
 import {
   Carousel,
   CarouselContent,
