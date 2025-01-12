@@ -37,9 +37,8 @@ export default function Quote() {
           </div>
 
           <span>
-            Lorem ipsum dolor sit amet consectetur. Mi netus sed in sed
-            tincidunt odio malesuada. Quis id eu ultricies sed tortor massa mi
-            feugiat euismod.
+          Trouvez rapidement et facilement un professionnel pour vos projets. Kalfind vous
+          met en relation rapidement avec des professionnels fiables et de qualité.
           </span>
         </div>
 
