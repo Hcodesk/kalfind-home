@@ -14,6 +14,7 @@ export const ShineButton = React.forwardRef<HTMLButtonElement, ShineButtonFrProp
         className={`h-[44px] bg-black group
           text-sm rounded-[10px] justify-start items-center inline-flex gap-[6px] px-5 py-3 
           transition-all duration-300 ease-in-out relative overflow-hidden ${className}`}
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeQOdpIbJ1G3veqxHOd2zVtbIIJ0ZE2nRa947CmLxI_acIeig/viewform"
         ref={ref}
         {...props}
       >
