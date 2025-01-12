@@ -27,13 +27,13 @@ export default function LearningSection() {
 
       <div className="w-full hidden lg:block h-px bg-[#FFC2C4] mb-12"></div>
 
-      <div className='hidden lg:grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto'>
+      <div className='hidden xl:grid xl:grid-cols-3 gap-8 max-w-6xl mx-auto'>
         {tab.map((item, index) => (
           <LearningCard key={index} title={item.title} img={item.img}/>
         ))}
       </div>
 
-      <div className="lg:hidden">
+      <div className="xl:hidden">
         <Carousel className="w-full">
           <CarouselContent className="-ml-4">
             {tab.map((item, index) => (

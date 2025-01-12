@@ -40,7 +40,7 @@ export default function ServicesSection() {
         </div>
       </div>
 
-      <div className="hidden lg:flex justify-center w-full gap-[40px] ">
+      <div className="hidden lg:flex justify-center w-full gap-2 xl:gap-[40px] ">
         {tab.map((item, index) => (
           <Card key={index} work={item.work} location={item.location} img={item.img} />
         ))}
