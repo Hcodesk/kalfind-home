@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image"
 import { ShineButton } from './ui/ShineButton copy'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -21,7 +22,11 @@ export default function Footer() {
              et prestataires fiables près de chez vous.
              </span>
 
-             <ShineButton className="rounded-sm text-black bg-white hover:bg-black hover:text-white   font-semibold w-[158px] "> Commencer</ShineButton>
+             <ShineButton className="rounded-sm text-black bg-white hover:bg-black hover:text-white   font-semibold w-[158px] ">
+               <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeQOdpIbJ1G3veqxHOd2zVtbIIJ0ZE2nRa947CmLxI_acIeig/viewform">
+                     Commencer
+               </Link>
+             </ShineButton>
         </div>
    </footer>
   )
