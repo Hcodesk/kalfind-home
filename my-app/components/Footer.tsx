@@ -1,33 +1,32 @@
 import React from 'react'
-import Image from "next/image"
+import Image from 'next/image'
 import { ShineButton } from './ui/ShineButton copy'
 import Link from 'next/link'
 
 export default function Footer() {
   return (
-   <footer className='mt-20 grid border pt-10 px-4 rounded-md grid-cols-1 justify-center lg:grid-cols-2 bg-footerBg lg:h-[592px] w-full bg-no-repeat bg-cover'>
-        <div className="flex justify-center">
-            <Image src="/footer.png" alt="footer img" width={535} height={443} className="object-contain" />
+    <div className='px-4 bg-black rounded-t-xl flex flex-col gap-6 py-20 items-center justify-center mt-20'>
+        <div>
+            <Image src="/logo2.svg" alt="logo" width={68} height={51} className="object-contain" />
         </div>
+        <span className="text-center text-white text-sm whitespace-normal">
+                Rejoignez une communauté de professionnels
+                 et de clients pour concrétiser vos projets.
+        </span>  
+        <span className="flex gap-6 flex-col md:flex-row items-center">
+            <input type="email" placeholder="L'e-mail va ici" className="bg-transparent border focus:outline-none text-white 
+            border-[#808080] min-w-[291px] min-h-10 placeholder:text-[#808080] placeholder:text-sm px-4 rounded-md "/>
 
-        <div className='flex flex-col p-4 gap-6 justify-center text-white'>
-             <span className='text-4xl font-semibold bg-gradient-to-r from-[#FFA7A9] to-[#FFFFFF] inline-block text-transparent bg-clip-text'>
-               Trouvez les meilleurs
-               professionnels pour vos projets
-             </span>
+            <ShineButton className='w-[118px] h-[42px] bg-red-600 rounded-md text-white '>
+               <Link  href="https://docs.google.com/forms/d/e/1FAIpQLSeQOdpIbJ1G3veqxHOd2zVtbIIJ0ZE2nRa947CmLxI_acIeig/viewform">
+                  Envoyer
+                </Link>
+            </ShineButton>
+        </span>
+        <span className=" text-sm whitespace-normal  text-[#808080] ">
+            2024 Kalfind. All Rights Received
+        </span>
 
-             <span className='text-sm font-light '>
-             Recherchez, comparez et engagezdes professionnelsqualifiés 
-             en toute simplicité.Kalfind vous connecte rapidement à des professionnels
-             et prestataires fiables près de chez vous.
-             </span>
-
-             <ShineButton className="rounded-sm text-black bg-white hover:bg-black hover:text-white   font-semibold w-[158px] ">
-               <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeQOdpIbJ1G3veqxHOd2zVtbIIJ0ZE2nRa947CmLxI_acIeig/viewform">
-                     Commencer
-               </Link>
-             </ShineButton>
-        </div>
-   </footer>
+    </div>
   )
 }

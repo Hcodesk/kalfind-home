@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <section className="flex 2xl:justify-between items-center 2xl:gap-6 mt-12 ">
-      <div className="flex flex-col gap-6 items-center justify-center p-8 lg:w-[711px]  2xl:w-2/4">
+      <div className="flex flex-col gap-6 items-center justify-center p-8 lg:w-[711px] 2xl:w-2/4 3xl:ml-16 ">
         <div className="flex  flex-col text-center lg:leading-[40px] lg:text-start text-xl md:text-[24px] xl:text-[48px] 3xl:text-6xl font-medium leading-none text-black  whitespace-wrap">
           <span>Les professionnels de qualité
             pour vos travaux de construction,
