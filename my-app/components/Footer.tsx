@@ -14,7 +14,7 @@ export default function Footer() {
                  et de clients pour concrétiser vos projets.
         </span>  
         <span className="flex gap-6 flex-col md:flex-row items-center">
-            <input type="email" placeholder="L'e-mail va ici" className="bg-transparent border focus:outline-none text-white 
+            <input type="email" placeholder="L'e-mail va ici" className="bg-transparent hidden border focus:outline-none text-white 
             border-[#808080] min-w-[291px] min-h-10 placeholder:text-[#808080] placeholder:text-sm px-4 rounded-md "/>
 
             <ShineButton className='w-[118px] h-[42px] bg-red-600 rounded-md text-white '>
